@@ -4,12 +4,12 @@ import Footer from '../components/Footer'
 import Input from '../components/Input'
 import Navbar from '../components/Navbar'
 import { topupAmount } from '../data/data'
+import Image from 'next/image'
 
 const detail = () => {
 
   const [topUp, setTopUp] = useState()
   // console.log(activeClass)
-
   const handleClick = (e)=>{
     e.preventDefault()
     setTopUp(e.target.id)
@@ -17,14 +17,17 @@ const detail = () => {
 
   return (
     <div>
+      
       <Navbar/>
       <main className='mt-20 p-5 md:p-16 md:py-8'>
         <h1>Top Up</h1>
         <p className='text-lg tracking-wide text-indigo-800 mt-4'>Perkuat akun dan jadilah pemenang sejati</p>
 
         <div className='grid grid-cols-2 md:grid-cols-5 my-10 max-w-5xl'>
-
-          <img className='h-64 min-w-48 md:col-span-2 mx-auto bg-cover rounded-3xl' src='assets/sven.png/'/>
+          
+          <div className='h-64 relative overflow-hidden w-48 md:col-span-2 mx-auto bg-cover rounded-3xl'>
+            <Image layout='fill' src={"/assets/sven.png"}/>
+          </div>
 
           <div className='ml-2 md:-ml-4'>
             <h2 className='text-2xl'>Dota 2</h2>
