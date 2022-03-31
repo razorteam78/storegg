@@ -44,7 +44,7 @@ const detail = () => {
           <div className='divider md:hidden my-10 col-span-2 '></div>
 
           <div className='space-y-10 md:-ml-4 col-start-1 col-span-2 md:col-start-3 md:row-start-2 md:col-span-3'>
-            <Input label="Verify ID" name="verifyId" placeholder="Verify your ID"/>
+            <Input type="text" label="Verify ID" name="verifyId" placeholder="Verify your ID"/>
 
             <div>
               <label>Nominal top up</label>
@@ -66,7 +66,7 @@ const detail = () => {
               </div>
             </div>
 
-            <Input label="Bank Account Name" name="bankAccountName" placeholder="Enter your bank account name"/>
+            <Input type="text" label="Bank Account Name" name="bankAccountName" placeholder="Enter your bank account name"/>
 
             <a className='btn color-block'>Continue</a>
           </div>
