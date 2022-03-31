@@ -13,7 +13,7 @@ const Footer = () => {
 
       {footer.map((data,i) => (
         <div key={i} className="pl-6">
-          <h3 className="mb-5 mt-10">{data.title}</h3>
+          <h3 className="mb-5 mt-5 md:mt-0">{data.title}</h3>
           <ul>
             {data.submenu.map((submenu, i) => (
               <li key={i} className="my-2">

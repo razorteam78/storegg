@@ -10,8 +10,8 @@ const Featured = ({gameData}) => {
             </h2>
 
             <div className='no-scrollbar flex mt-7 mb-16 w-full gap-4 overflow-x-scroll p-5'>
-                {gameData.map(data=>(
-                    <Card data={data}/>
+                {gameData.map((data,i)=>(
+                    <Card key={i} data={data}/>
                 ))}
             </div>
 

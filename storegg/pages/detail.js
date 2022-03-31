@@ -19,7 +19,7 @@ const detail = () => {
     <div>
       
       <Navbar/>
-      <main className='mt-20 p-5 md:p-16 md:py-8'>
+      <main>
         <h1>Top Up</h1>
         <p className='text-lg tracking-wide text-indigo-800 mt-4'>Perkuat akun dan jadilah pemenang sejati</p>
 
@@ -72,10 +72,10 @@ const detail = () => {
           </div>
         </div>
         
-        <Footer/>
 
       </main>
 
+      <Footer/>
 
     </div>
   )

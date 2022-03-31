@@ -23,17 +23,17 @@ export default function Home({data}) {
       
 
       <Navbar/>
-      <main className='mt-20 p-5 md:p-16 md:py-8'>
-        <Banner/>
+        <main>
+          <Banner/>
 
-        <Services/>
+          <Services/>
 
-        <Featured gameData={gameData}/>
+          <Featured gameData={gameData}/>
 
-        <Story/>
+          <Story/>
 
-        <Footer/>
-      </main>
+        </main>
+      <Footer/>
 
     </div>
   )

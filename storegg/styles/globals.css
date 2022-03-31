@@ -19,7 +19,7 @@
   }
 
   h1 {
-    @apply text-5xl font-bold tracking-wide leading-tight text-indigo-900;
+    @apply text-5xl font-bold tracking-wide leading-tight text-indigo-900 pointer-events-none;
   }
   h2 {
     @apply text-4xl text-indigo-900 font-bold tracking-wide;
@@ -42,6 +42,10 @@
 
   div.active {
     @apply bg-cyan-300 border-2 border-cyan-400;
+  }
+
+  main {
+    @apply mt-16 p-8 md:p-10;
   }
 }
 
