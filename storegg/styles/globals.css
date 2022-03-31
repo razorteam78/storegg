@@ -95,7 +95,7 @@
   }
 
   .input-text {
-    @apply outline-none border-2 border-indigo-900 rounded-full p-3 px-5
+    @apply outline-none border-2 border-indigo-900 rounded-full p-2 px-4
   }
 }
 

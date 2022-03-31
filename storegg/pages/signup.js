@@ -20,7 +20,7 @@ const signup = () => {
         </div>
 
         <a className='btn color-block'>Continue</a>
-        <a className='btn color-outline'>Continue</a>
+        <a className='btn color-no-outline bg-slate-200'>Sign in</a>
       </div>
     </div>
   )
