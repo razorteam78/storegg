@@ -40,8 +40,8 @@ const checkout = () => {
           </div>
 
           <div className='divider md:hidden my-10 col-span-2 '></div>
-
-          <div className='flex-col col-span-2'>
+          {/* md:flex-col md:mt-8 col-start-2 md:row-start-2 md:col-span-2 */}
+          <div className='row-start-3 col-span-2 md:col-span-3 md:row-start-2 md:col-start-3'>
 
             <h3>Purchase Detail</h3>
 
@@ -63,11 +63,13 @@ const checkout = () => {
             
           </div>
           
-          <div className='col-span-2 mt-6 flex items-center'>
-            <input type={'checkbox'} className="mr-2 w-4 h-4"/> <label>I have transfered my money </label>
+          <div className='col-span-3 mt-6 flex flex-col items-center md:row-start-3 md:col-start-3'>
+            <div className='self-start'>
+              <input type={'checkbox'} className="mr-2 w-4 h-4"/> <label>I have transfered my money </label>
+            </div>
+            <a className='btn w-full color-block block mt-8 col-span-2'>Continue</a>
           </div>
 
-          <a className='btn color-block block mt-8 col-span-2'>Continue</a>
           
         </div>
 
