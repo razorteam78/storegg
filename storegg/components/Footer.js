@@ -11,7 +11,7 @@ const Footer = () => {
         <p>Copyright 2022. All Right Reserved</p>
       </div>
 
-      {footer.map((data,i) => (
+      {footer.map((data, i) => (
         <div key={i} className="pl-6">
           <h3 className="mb-5 mt-5 md:mt-0">{data.title}</h3>
           <ul>

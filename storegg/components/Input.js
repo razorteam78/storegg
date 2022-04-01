@@ -1,12 +1,18 @@
-import React from 'react'
+import React from "react";
 
-const Input = ({label,name,placeholder,type}) => {
+const Input = ({ label, name, placeholder, type }) => {
   return (
-    <div className='input-group'>
+    <div className="input-group">
       <label htmlFor={name}>{label}</label>
-      <input name={name} id={name} className='input-text' type={type} placeholder={placeholder}/>
+      <input
+        name={name}
+        id={name}
+        className="input-text"
+        type={type}
+        placeholder={placeholder}
+      />
     </div>
-  )
-}
+  );
+};
 
-export default Input
+export default Input;
