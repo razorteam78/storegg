@@ -9,9 +9,12 @@ import Story from '../components/Story';
 import Footer from '../components/Footer';
 import { useState } from 'react';
 
+import connect from '../utils/dbConnect'
 
 export default function Home({data}) {
   const [gameData, setGameData] = useState(data.slice(0,10))
+
+  connect()
 
   return (
     <div>
