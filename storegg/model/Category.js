@@ -5,6 +5,4 @@ const CategorySchema  = new mongoose.Schema({
   slug : String
 })
 
-const CategoryModel = mongoose.model("CategoryModel",CategorySchema)
-
-module.exports = CategoryModel
+module.exports = mongoose.models.CategoryModel || mongoose.model("Cateogry",CategorySchema)

@@ -1,11 +1,10 @@
 const mongoose = require("mongoose")
+const GamesModel = require("./Games")
 
 const GameItemSchema  = new mongoose.Schema({
-  gameID : String,
+  gameID : GamesModel,
   name : String,
   price : Number
 })
 
-const GameItemModel = mongoose.model("GameItemModel",GameItemSchema)
-
-module.exports = GameItemModel
+module.exports = GameItemModel || mongoose.models.GameItemModel

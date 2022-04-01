@@ -8,17 +8,15 @@ const GamesSchema = new mongoose.Schema({
     type : String,
     required : [true,'Please add game title'],
     unique : true,
-    maxlength : [40,'Title cant be more than 40 characters']
+    maxlength : [40,'Title cannot be more than 40 characters']
   },
   description : {
     type : String,
     required : true,
   },
   gameItems : [GameItemModel],
-  category : [CategoryModely],
+  category : [CategoryModel],
   image : String
 })
 
-const GamesModel = mongoose.model("GamesModel",GamesSchema)
-
-module.exports = GamesModel
+module.exports = GamesModel || mongoose.models.GamesModel

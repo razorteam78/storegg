@@ -6,18 +6,26 @@ const UserSchema = new mongoose.Schema({
     required : [true,'Please add fullname'],
     trim : true,
   },
-  fullName : {
+  userName : {
     type : String,
-    required : [true,'Please add fullname'],
+    required : [true,'Please add user name'],
     trim : true,
   },
-  fullName : {
+  email : {
     type : String,
-    required : [true,'Please add fullname'],
+    required : [true,'Please add email'],
+    trim : true,
+  },
+  password : {
+    type : String,
+    required : [true,'Please add password'],
+    trim : true,
+  },
+  token : {
+    type : String,
+    required : true,
     trim : true,
   },
 })
 
-const UserModel = mongoose.model("UserModel",UserSchema)
-
-module.exports = UserModel
+module.exports = mongoose.models.User || mongoose.model("User",UserSchema)
