@@ -19,4 +19,5 @@ const GamesSchema = new mongoose.Schema({
   image: String,
 });
 
-module.exports = GamesModel || mongoose.models.GamesModel;
+module.exports =
+  mongoose.model("Games", GamesSchema) || mongoose.models.GamesModel;

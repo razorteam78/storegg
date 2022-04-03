@@ -7,4 +7,5 @@ const GameItemSchema = new mongoose.Schema({
   price: Number,
 });
 
-module.exports = GameItemModel || mongoose.models.GameItemModel;
+module.exports =
+  mongoose.models.GameItem || mongoose.model("GameItem", GameItemSchema);
